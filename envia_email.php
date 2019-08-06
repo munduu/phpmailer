@@ -89,18 +89,18 @@ $token       = md5($id_contrato);
    
 					$mail = new PHPMailer();
 					$mail->IsSMTP(); // Define que a mensagem será SMTP
-          $mail->Host     = "mail.igestaoweb.com.br"; // Endereço do servidor SMTP
+          $mail->Host     = "h33.servidorhh.com"; // Endereço do servidor SMTP
           $mail->SMTPAuth = true; // Autenticação
-          $mail->Port     = 587;
+          $mail->Port     = 465;
 
-          $mail->Username = "concept@igestaoweb.com.br"; // Usuário do servidor SMTP
-          $mail->Password = "Kk688SrF"; // Senha da caixa postal utilizada
-          $mail->From     = "concept@igestaoweb.com.br";  
+          echo $mail->Username = "naoresponda@conceptclubedebeneficios.com.br"; // Usuário do servidor SMTP
+          $mail->Password = "kY!{JY7^@xW;"; // Senha da caixa postal utilizada
+          $mail->From     = "naoresponda@conceptclubedebeneficios.com.br";  
           $mail->FromName = "Concept - Financeiro";
 					$mail->AddAddress($mail_cliente); 
 					
  
-					$mail->SMTPDebug = 0; //troca para 1 ou 4 para debugar o erro
+					$mail->SMTPDebug = 1; //troca para 1 ou 4 para debugar o erro
 					$mail->IsHTML(true); // Define que o e-mail será enviado como HTML
 					$mail->CharSet = 'utf-8'; // Charset da mensagem (opcional)
 					$mail->Subject  = "Termo de Aceite e Contrato"; // Assunto da mensagem
